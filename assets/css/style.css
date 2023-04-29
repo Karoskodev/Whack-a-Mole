@@ -1,0 +1,13 @@
+ body {
+    font-family:'Gloria Hallelujah', cursive;
+    text-align: center;
+    background: url("../images/whackAmole.png");
+    background-size: cover;
+ }
+
+.field {
+    width: 900px;
+    height: 600px;
+    background-color: green;
+    margin: 0 auto;
+}
