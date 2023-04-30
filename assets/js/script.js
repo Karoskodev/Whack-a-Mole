@@ -1,17 +1,27 @@
 // Wait for Dom to finish loading before runing the game
 
 let currentHole;
+let isRunning = false;
+let interval
 
 document.addEventListener("DOMContentLoaded", function() {
+
     let button = document.getElementById("start")
     button.addEventListener("click", runGame);
+    
 })
 
 function runGame () {
-    
-    setInterval(setMole, 1500);
-
+    if (!isRunning) {
+        isRunning = true;
+        intervalId = setInterval(setMole, 1500);
+    } else {
+        clearInterval(intervalId);
+        intervalId = setInterval(setMole, 1500);
+    }
 }
+
+
 
     
 function randomNumber() {
@@ -21,10 +31,17 @@ function randomNumber() {
 
 function setMole () {
 
-        let mole = document.createElement("img");
-        mole.src = "../images/mole.png";
+    if (currentHole) {
+        currentHole.innerHTML = "";
+    }
 
-        let num = randomNumber();
-        currentHole = document.getElementById(num)
-        currentHole.appendChild(mole);
+    let mole = document.createElement("img");
+    mole.src = "../assets/images/mole.png"
+
+    let num = randomNumber();
+    currentHole = document.getElementById(num)
+    currentHole.appendChild(mole);
+
+
+    
 }
