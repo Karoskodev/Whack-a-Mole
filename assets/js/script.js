@@ -14,15 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
 function runGame () {
     if (!isRunning) {
         isRunning = true;
-        intervalId = setInterval(setMole, 1500);
+        intervalId = setInterval(setMole, 800);
     } else {
         clearInterval(intervalId);
-        intervalId = setInterval(setMole, 1500);
+        intervalId = setInterval(setMole, 800);
     }
 }
-
-
-
     
 function randomNumber() {
     let num = Math.floor(Math.random()*6);
@@ -41,7 +38,5 @@ function setMole () {
     let num = randomNumber();
     currentHole = document.getElementById(num)
     currentHole.appendChild(mole);
-
-
-    
+ 
 }
