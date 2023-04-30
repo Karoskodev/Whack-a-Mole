@@ -3,11 +3,43 @@
     text-align: center;
     background: url("../images/whackAmole.png");
     background-size: cover;
+    background-repeat: no-repeat;
  }
 
+.heading {
+    font-size: 3em;
+}
+
+.scores {
+    font-size: 2em;
+}
+
+#start {
+    font-family:'Gloria Hallelujah', cursive;  
+    text-align: center;
+    border: none;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 .field {
-    width: 900px;
-    height: 600px;
-    background-color: green;
+    width: 750px;
+    height: 500px;
+    background-color: rgba(54, 102, 14, 0.7);
+
+    border: 10px solid white;
+    border-radius: 30px;
     margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.hole {
+    width: 250px;
+    height: 250px;
+    background-image: url("../images/hole.png");
+    background-size: cover;
+
 }
