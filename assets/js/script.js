@@ -55,13 +55,13 @@ function setMole () {
     //remove the mole from the previous hole
     if (currentHole) {
         currentHole.innerHTML = "";
-        currentHole.addEventListener("click", selectHole);
+        currentHole.addEventListener("click", selectHole); // add back eventlistener for hole after removing mole
     }
 
     let mole = document.createElement("img");
     mole.src = "../assets/images/mole.png"
 
-    //Choose a random hole to put the mole in
+    //Choose a random hole and put the mole in
     let num = randomNumber();
     currentHole = document.getElementById(num)
     currentHole.appendChild(mole);
@@ -75,7 +75,7 @@ function selectHole () {
         score += 1;
         scoreElement.textContent = score;
 
-        this.removeEventListener("click", selectHole);
+        this.removeEventListener("click", selectHole); //remove eventlistener after adding score to prevent multiple score clicks per spawn
             
     }
 }
