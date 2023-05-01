@@ -36,6 +36,8 @@ function runGame () {
         isRunning = true;
         interval = setInterval(setMole, 600);
     } else {
+        scoreElement.textContent = 0; 
+        score = 0;
         clearInterval(interval); 
         interval = setInterval(setMole, 600);
     }
@@ -53,6 +55,7 @@ function setMole () {
     //remove the mole from the previous hole
     if (currentHole) {
         currentHole.innerHTML = "";
+        currentHole.addEventListener("click", selectHole);
     }
 
     let mole = document.createElement("img");
@@ -71,6 +74,8 @@ function selectHole () {
 
         score += 1;
         scoreElement.textContent = score;
+
+        this.removeEventListener("click", selectHole);
             
     }
 }
