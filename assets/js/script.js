@@ -8,6 +8,12 @@ let isRunning = false;
 //variable to store setInterval()
 let interval;
 
+//tracking score
+let score = 0;
+
+//display score
+let scoreElement = document.getElementById("score");
+
 
 // wait for Dom to finish loading before runing the game
 document.addEventListener("DOMContentLoaded", function() {
@@ -30,7 +36,7 @@ function runGame () {
         isRunning = true;
         interval = setInterval(setMole, 600);
     } else {
-        clearInterval(interval); //
+        clearInterval(interval); 
         interval = setInterval(setMole, 600);
     }
 }
@@ -56,4 +62,15 @@ function setMole () {
     let num = randomNumber();
     currentHole = document.getElementById(num)
     currentHole.appendChild(mole);
+}
+
+//Add 1 to score if selected hole have mole spawned on it
+function selectHole () {
+
+    if (this == currentHole) {
+
+        score += 1;
+        scoreElement.textContent = score;
+            
+    }
 }
