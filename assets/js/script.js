@@ -5,6 +5,7 @@ let currentHole;
 //variable to track whether the game is running or not
 let isRunning = false;
 
+//variable to store setInterval()
 let interval;
 
 
@@ -14,6 +15,12 @@ document.addEventListener("DOMContentLoaded", function() {
     //start the game when the user clicks the button
     let button = document.getElementById("start")
     button.addEventListener("click", runGame); 
+
+    //loop through holes and add a click event listener to each one
+    let holes = document.getElementsByClassName("hole");
+    for (i=0; i < holes.length; i++) {
+        holes[i].addEventListener("click", selectHole);
+    };
     
 })
 
@@ -21,10 +28,10 @@ document.addEventListener("DOMContentLoaded", function() {
 function runGame () {
     if (!isRunning) {
         isRunning = true;
-        interval = setInterval(setMole, 800);
+        interval = setInterval(setMole, 600);
     } else {
         clearInterval(interval); //
-        interval = setInterval(setMole, 800);
+        interval = setInterval(setMole, 600);
     }
 }
  
@@ -49,5 +56,4 @@ function setMole () {
     let num = randomNumber();
     currentHole = document.getElementById(num)
     currentHole.appendChild(mole);
- 
 }
