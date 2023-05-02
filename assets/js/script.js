@@ -14,6 +14,12 @@ let score = 0;
 //display score
 let scoreElement = document.getElementById("score");
 
+//tracking time
+let time = 10;
+
+//display time
+let timeLeft = document.getElementById("time");
+
 
 // wait for Dom to finish loading before runing the game
 document.addEventListener("DOMContentLoaded", function() {
@@ -35,11 +41,18 @@ function runGame () {
     if (!isRunning) {
         isRunning = true;
         interval = setInterval(setMole, 600);
+
+        let countId = setInterval(count, 1000);
+
+        function count() {
+
+            time--
+            timeLeft.textContent = time    
+        
+        }  
+
     } else {
-        scoreElement.textContent = 0; 
-        score = 0;
-        clearInterval(interval); 
-        interval = setInterval(setMole, 600);
+
     }
 }
  
