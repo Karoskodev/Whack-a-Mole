@@ -47,11 +47,31 @@ function runGame () {
         function count() {
 
             time--
-            timeLeft.textContent = time    
+            timeLeft.textContent = time 
         
-        }  
+            if (time == 0) {
+                isRunning = false;
+                clearInterval(interval);
+                alert(`game over  ${score}`
+                )
+                scoreElement.textContent = 0; 
+                score = 0;
+
+                timeLeft.textContent = 10;
+                time = 10;
+
+                clearInterval(countId);
+            }
+        
+        }    
 
     } else {
+
+        scoreElement.textContent = 0; 
+        score = 0;
+
+        clearInterval(interval); 
+        interval = setInterval(setMole, 600);
 
     }
 }
