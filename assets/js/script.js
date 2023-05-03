@@ -36,12 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
     
 })
 
-//spawn a mole every 800ms and prevent multiple functions from running at the same time
+//spawn a mole every 700ms and prevent multiple functions from running at the same time
 function runGame () {
     if (!isRunning) {
         isRunning = true;
-        interval = setInterval(setMole, 600);
-
+        interval = setInterval(setMole, 700);
+        
+        //countdown timer
         let countId = setInterval(count, 1000);
 
         function count() {
@@ -50,6 +51,8 @@ function runGame () {
             timeLeft.textContent = time 
         
             if (time == 0) {
+
+                //stop game when time is 0
                 isRunning = false;
                 clearInterval(interval);
                 alert(`game over  ${score}`
@@ -67,11 +70,12 @@ function runGame () {
 
     } else {
 
+        //restart the game if its already running
         scoreElement.textContent = 0; 
         score = 0;
 
         clearInterval(interval); 
-        interval = setInterval(setMole, 600);
+        interval = setInterval(setMole, 700);
 
         time = 10;
         timeLeft.textContent = 10;
