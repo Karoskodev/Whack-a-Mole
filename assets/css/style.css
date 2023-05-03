@@ -17,11 +17,23 @@
 #how {
     margin-top: -2%;
     cursor: pointer;
+    width: 6%;
+    margin-left: 47%;
 }
 
 #how:hover {
     color: white;
-  }
+}
+
+#score {
+    font-size: large;
+    color: rgb(202, 71, 10);
+    font-size: 110%;
+}
+
+#time {
+    color: rgb(161, 62, 16);
+}
 
 #start {
     font-family:'Gloria Hallelujah', cursive;  
