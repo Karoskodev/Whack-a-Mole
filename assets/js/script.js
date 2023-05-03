@@ -73,6 +73,14 @@ function runGame () {
         clearInterval(interval); 
         interval = setInterval(setMole, 600);
 
+        time = 10;
+        timeLeft.textContent = 10;
+        clearInterval(countId);
+
+        count(); 
+        
+        let countId = setInterval(count, 1000)
+
     }
 }
  
