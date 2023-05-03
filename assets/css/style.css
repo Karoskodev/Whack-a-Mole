@@ -14,6 +14,15 @@
     font-size: 2em;
 }
 
+#how {
+    margin-top: -2%;
+    cursor: pointer;
+}
+
+#how:hover {
+    color: white;
+  }
+
 #start {
     font-family:'Gloria Hallelujah', cursive;  
     text-align: center;
@@ -27,6 +36,8 @@
 
 #start:hover {
     background-color: #3e8e41;
+    border: 3px solid #ffffff;
+    color: white;
   }
 
 .field {

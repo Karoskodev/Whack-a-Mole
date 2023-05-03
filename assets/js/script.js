@@ -55,7 +55,7 @@ function runGame () {
                 //stop game when time is 0
                 isRunning = false;
                 clearInterval(interval);
-                alert(`game over  ${score}`
+                alert(`Game over! Your final score is ${score}`
                 )
                 currentHole.innerHTML = "";
                 currentHole.removeEventListener("click", selectHole);
