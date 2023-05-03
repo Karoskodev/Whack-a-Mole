@@ -109,8 +109,14 @@ function setMole () {
     //Choose a random hole and put the mole in
     let num = randomNumber();
     currentHole = document.getElementById(num)
-    currentHole.appendChild(mole);
+
+    if (currentHole) {
+        currentHole.appendChild(mole);
+    } else {
+        console.log("Error: Cannot find hole with id " + num);
+    }
 }
+
 
 //Add 1 to score if selected hole have mole spawned on it
 function selectHole () {
