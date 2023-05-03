@@ -17,12 +17,17 @@
 #start {
     font-family:'Gloria Hallelujah', cursive;  
     text-align: center;
-    border: none;
+    border: 3px solid #362525;
     font-size: 20px;
     border-radius: 10px;
     cursor: pointer;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s;
 }
+
+#start:hover {
+    background-color: #3e8e41;
+  }
 
 .field {
     width: 750px;
