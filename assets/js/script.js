@@ -57,6 +57,8 @@ function runGame () {
                 clearInterval(interval);
                 alert(`game over  ${score}`
                 )
+                currentHole.innerHTML = "";
+                currentHole.removeEventListener("click", selectHole);
                 scoreElement.textContent = 0; 
                 score = 0;
 
