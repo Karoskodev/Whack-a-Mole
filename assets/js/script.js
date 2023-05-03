@@ -20,6 +20,13 @@ let time = 10;
 //display time
 let timeLeft = document.getElementById("time");
 
+//how to play
+let how = document.getElementById("how")
+
+//click event listener to the 'how to play' that displays an alert with the game instructions
+how.addEventListener("click", function() {
+    alert('Welcome to Whack a Mole! How to play: Click on as many moles as you can within 10 seconds. Each hit will earn you 1 point. Good luck!')
+});
 
 // wait for Dom to finish loading before runing the game
 document.addEventListener("DOMContentLoaded", function() {
