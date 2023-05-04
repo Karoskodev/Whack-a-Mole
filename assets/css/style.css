@@ -118,7 +118,7 @@ body {
 
 }
 
-@media screen and (max-width: 490px), screen and (max-height: 600px) {
+@media screen and (max-width: 490px) {
 
     .heading {
         font-size: 1.5em;
@@ -174,5 +174,53 @@ body {
     .hole {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media screen and (max-height: 600px) {
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    #start {
+        font-size: 12px;
+    }
+
+    #how {
+        font-size: 11px;
+    }
+
+    .field {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .hole {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hole img {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .heading {
+        font-size: 1em;
+    }
+
+    #start {
+        font-size: 10px;
+    }
+
+    #how {
+        font-size: 9px;
+    }
+
+    .scores {
+        font-size: 0.8em;
     }
 }
