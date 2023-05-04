@@ -118,7 +118,7 @@ body {
 
 }
 
-@media screen and (max-width: 490px) {
+@media screen and (max-width: 490px), screen and (max-height: 600px) {
 
     .heading {
         font-size: 1.5em;
