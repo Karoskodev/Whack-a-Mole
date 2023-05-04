@@ -45,12 +45,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
 //spawn a mole every 700ms and prevent multiple functions from running at the same time
 function runGame () {
+
+    let countId
+
     if (!isRunning) {
         isRunning = true;
         interval = setInterval(setMole, 700);
         
         //countdown timer
-        let countId = setInterval(count, 1000);
+        countId = setInterval(count, 1000);
 
         function count() {
 
