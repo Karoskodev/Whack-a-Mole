@@ -1,10 +1,11 @@
- body {
+body {
     font-family:'Gloria Hallelujah', cursive;
     text-align: center;
     background: url("../images/whackAmole.png");
     background-size: cover;
     background-repeat: no-repeat;
- }
+    background-position: center;
+}
 
 .heading {
     font-size: 3em;
@@ -19,6 +20,7 @@
     cursor: pointer;
     width: 6%;
     margin-left: 47%;
+    transition: all 0.4s;
 }
 
 #how:hover {
@@ -69,11 +71,30 @@
     height: 250px;
     background-image: url("../images/hole.png");
     background-size: cover;
-
 }
 
 .hole img {
     width: 150px;
     height: 150px;
+}
+
+@media screen and (max-width: 1300px) {
+
+    #how {
+        width: 14%;
+        margin-left: 43%;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+    
+    .scores {
+        font-size: 1em;
+    }
+
+    #start {
+        font-size: 15px;
+    }
 
 }
