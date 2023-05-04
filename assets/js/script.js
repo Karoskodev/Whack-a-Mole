@@ -21,32 +21,56 @@ let time = 10;
 let timeLeft = document.getElementById("time");
 
 //how to play
-let how = document.getElementById("how")
+let how = document.getElementById("how");
 
 //click event listener to the 'how to play' that displays an alert with the game instructions
 how.addEventListener("click", function() {
-    alert('Welcome to Whack a Mole! How to play: Click on as many moles as you can within 10 seconds. Each hit will earn you 1 point. Good luck!')
+    alert('Welcome to Whack a Mole! How to play: Click on as many moles as you can within 10 seconds. Each hit will earn you 1 point. Good luck!');
 });
 
 // wait for Dom to finish loading before runing the game
 document.addEventListener("DOMContentLoaded", function() {
 
     //start the game when the user clicks the button
-    let button = document.getElementById("start")
+    let button = document.getElementById("start");
     button.addEventListener("click", runGame); 
 
     //loop through holes and add a click event listener to each one
     let holes = document.getElementsByClassName("hole");
-    for (i=0; i < holes.length; i++) {
+    for (let i=0; i < holes.length; i++) {
         holes[i].addEventListener("click", selectHole);
-    };
+    }
     
-})
+});
 
 //spawn a mole every 700ms and prevent multiple functions from running at the same time
 function runGame () {
 
-    let countId
+    let countId;
+
+    function count() {
+
+        time--;
+        timeLeft.textContent = time; 
+    
+        if (time == 0) {
+
+            //stop game when time is 0
+            isRunning = false;
+            clearInterval(interval);
+            alert(`Game over! Your final score is ${score}`);
+            currentHole.innerHTML = "";
+            currentHole.removeEventListener("click", selectHole);
+            scoreElement.textContent = 0; 
+            score = 0;
+
+            timeLeft.textContent = 10;
+            time = 10;
+
+            clearInterval(countId);
+        }
+    
+    }    
 
     if (!isRunning) {
         isRunning = true;
@@ -55,30 +79,7 @@ function runGame () {
         //countdown timer
         countId = setInterval(count, 1000);
 
-        function count() {
-
-            time--
-            timeLeft.textContent = time 
-        
-            if (time == 0) {
-
-                //stop game when time is 0
-                isRunning = false;
-                clearInterval(interval);
-                alert(`Game over! Your final score is ${score}`
-                )
-                currentHole.innerHTML = "";
-                currentHole.removeEventListener("click", selectHole);
-                scoreElement.textContent = 0; 
-                score = 0;
-
-                timeLeft.textContent = 10;
-                time = 10;
-
-                clearInterval(countId);
-            }
-        
-        }    
+        count();    
 
     } else {
 
@@ -95,7 +96,7 @@ function runGame () {
 
         count(); 
         
-        let countId = setInterval(count, 1000)
+        let countId = setInterval(count, 1000);
 
     }
 }
@@ -121,7 +122,7 @@ function setMole () {
 
     //Choose a random hole and put the mole in
     let num = randomNumber();
-    currentHole = document.getElementById(num)
+    currentHole = document.getElementById(num);
 
     if (currentHole) {
         currentHole.appendChild(mole);

@@ -13,7 +13,6 @@ body {
     -ms-user-select: none;
 
     /* Disable image dragging */
-    user-drag: none;
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
@@ -98,7 +97,6 @@ body {
     -ms-user-select: none;
 
     /* Disable image dragging */
-    user-drag: none;
     -webkit-user-drag: none;
     -moz-user-drag: none;
     -ms-user-drag: none;
