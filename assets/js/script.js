@@ -114,6 +114,7 @@ function setMole () {
 
     let mole = document.createElement("img");
     mole.src = "./assets/images/mole.png";
+    mole.alt = "image of pixel art style mole";
 
     //Choose a random hole and put the mole in
     let num = randomNumber();
