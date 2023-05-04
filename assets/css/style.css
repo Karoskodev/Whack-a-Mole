@@ -117,3 +117,34 @@ body {
     }
 
 }
+
+@media screen and (max-width: 490px) {
+
+    .heading {
+        font-size: 1.5em;
+    }
+
+    #start {
+        font-size: 12px;
+    }
+
+    #how {
+        font-size: 11px;
+    }
+
+    .field {
+        width: 300px;
+        height: 200px;
+    }
+    
+    .hole {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .hole img {
+        width: 100px;
+        height: 100px;
+    }
+
+}
