@@ -5,6 +5,19 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+
+    /* Disable image selection */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* Disable image dragging */
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+
 }
 
 .heading {
@@ -76,6 +89,19 @@ body {
 .hole img {
     width: 150px;
     height: 150px;
+
+    /* Disable image selection */
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+
+    /* Disable image dragging */
+    user-drag: none;
+    -webkit-user-drag: none;
+    -moz-user-drag: none;
+    -ms-user-drag: none;
+    
 }
 
 @media screen and (max-width: 1300px) {
