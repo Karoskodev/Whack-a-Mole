@@ -148,3 +148,19 @@ body {
     }
 
 }
+
+@media screen and (max-height: 930px) {
+
+    .heading {
+        font-size: 2em;
+    }
+    
+    .scores {
+        font-size: 1em;
+    }
+
+    #start {
+        font-size: 15px;
+    }
+   
+}
