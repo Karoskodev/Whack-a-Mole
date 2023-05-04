@@ -164,3 +164,15 @@ body {
     }
    
 }
+
+@media screen and (max-height: 790px) {
+    .field {
+        width: 450px;
+        height: 300px;
+    }
+    
+    .hole {
+        width: 150px;
+        height: 150px;
+    }
+}
