@@ -74,7 +74,7 @@ function runGame () {
 
     if (!isRunning) {
         isRunning = true;
-        interval = setInterval(setMole, 700);
+        interval = setInterval(setMole, 800);
         
         //countdown timer
         countId = setInterval(count, 1000);
@@ -88,7 +88,7 @@ function runGame () {
         score = 0;
 
         clearInterval(interval); 
-        interval = setInterval(setMole, 700);
+        interval = setInterval(setMole, 800);
 
         count(); 
 
