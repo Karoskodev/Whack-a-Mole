@@ -46,6 +46,30 @@ The game track and display the player's score. One mole hit = 1 point
 ![score](assets/images/readme/score.png)
 
 ### Time limit
-The game has a built-in time limit of 10 seconds, providing a sense of urgency and challenge for players to whack as many moles as possible before the time runs out.
+The game has a built-in time limit of 10 seconds, providing a sense of urgency and challenge for players to whack as many moles as possible.
 <br>
 ![time left](assets/images/readme/time.png)
+<br>
+When the time runs out an alert pops up with the final score.
+<br>
+![game over alert](assets/images/readme/final.png)
+
+### Game field
+The game includes a 3x2 grid of mole holes
+<br>
+![game field](assets/images/readme/field.png)
+
+### Randomized mole appearances
+The moles appear in random  locations within the 3x2 grid, providing a dynamic and unpredictable gameplay experience for users.
+<br>
+![random mole](assets/images/readme/random.png)
+
+
+### Alert with rules 
+When the user clicks on the "How to Play"
+<br> 
+![How to play](assets/images/readme/how.png)
+<br>
+an alert pops up with the rules of the game, providing users with a quick and easy way to understand the gameplay mechanics.
+![alert how to play](assets/images/readme/howalert.png)
+
