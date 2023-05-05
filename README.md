@@ -15,3 +15,12 @@
 5. [ Deployment](#deployment)
 6. [ Credits](#credits)
 7. [ Acknowledgements](#acknowledgements)
+
+<br>
+
+## UX
+### Site Goals
+Whack-a-Mole game has been designed to be fun and engaging for players of all ages and skill levels.
+The game has been designed to be visually appealing and the screen is optimized for different screen sizes and resolutions, ensuring that it looks great on both desktop and mobile devices.
+
+### Wireframe
