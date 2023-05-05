@@ -73,3 +73,18 @@ When the user clicks on the "How to Play"
 an alert pops up with the rules of the game, providing users with a quick and easy way to understand the gameplay mechanics.
 ![alert how to play](assets/images/readme/howalert.png)
 
+## Technology
+ ### Languages Used
+  1. HTML5
+  2. CSS3
+  3. Javascript ES6.
+ ### Programs and others
+ - Google Fonts - Gloria Hallelujah
+ - GitHub as cloud repository
+ - Midjurney for generating all images 
+
+ ## Testing
+Extensive testing was conducted to confirm that everytjing were functioning correctly.
+To identify any potential issues, the site and documentation were reviewed by friends and family members.
+Furthermore, the W3C Markup Validator, W3C CSS Validator and JShint Services were employed to scrutinize for any errors.
+ Also Lighthouse testing to evaluate performance for both the desktop and mobile versions.
