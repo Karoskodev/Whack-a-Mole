@@ -26,3 +26,18 @@ The game has been designed to be visually appealing and the screen is optimized 
 ### Page Wireframe
 
   ![Page Wireframe](assets/images/readme/wire.png)
+
+## Features
+
+### Start Button
+ The game includes a "Start" button that users can click to begin playing the game, providing a clear and easy way to initiate the game.
+
+<br>
+
+![Start button](assets/images/readme/button1.png)
+<br>
+Start button hovered on it:
+<br>
+![Start button hovered on it](assets/images/readme/button2.jpg)
+
+
