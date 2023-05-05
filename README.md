@@ -71,6 +71,7 @@ When the user clicks on the "How to Play"
 ![How to play](assets/images/readme/how.png)
 <br>
 an alert pops up with the rules of the game, providing users with a quick and easy way to understand the gameplay mechanics.
+<br>
 ![alert how to play](assets/images/readme/howalert.png)
 
 ## Technology
@@ -117,3 +118,14 @@ mobile:
 4. Left the next dropdown labeled /root as the default option.
 5. Selected the Save button.
 6. Received a notification from GitHub indicating that the project was being deployed.
+
+## Credits
+ 1. Code Institute for providing the LMS videos, tutorials, support
+ 2. Love Maths Project for inspiration and guidance
+ 3. W3schools.com for assistance with the code
+ 5. Youtube chanels: Code with Ania Kubów,Kenny Yip Coding
+ 6. Google Fonts 
+ 7. Midjurney for the images
+
+## Acknowledgements
+I would like to extend a special thanks to Alan Bushell, who provided valuable guidance and support throughout the development of this project.
