@@ -40,4 +40,12 @@ Start button hovered on it:
 <br>
 ![Start button hovered on it](assets/images/readme/button2.jpg)
 
+### Scoring system
+The game track and display the player's score. One mole hit = 1 point
+<br>
+![score](assets/images/readme/score.png)
 
+### Time limit
+The game has a built-in time limit of 10 seconds, providing a sense of urgency and challenge for players to whack as many moles as possible before the time runs out.
+<br>
+![time left](assets/images/readme/time.png)
