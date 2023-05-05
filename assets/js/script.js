@@ -90,13 +90,10 @@ function runGame () {
         clearInterval(interval); 
         interval = setInterval(setMole, 700);
 
+        count(); 
+
         time = 10;
         timeLeft.textContent = 10;
-        clearInterval(countId);
-
-        count(); 
-        
-        let countId = setInterval(count, 1000);
 
     }
 }
