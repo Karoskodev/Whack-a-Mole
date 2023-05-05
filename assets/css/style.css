@@ -1,3 +1,4 @@
+
 body {
     font-family:'Gloria Hallelujah', cursive;
     text-align: center;
@@ -120,6 +121,10 @@ body {
 
     #start {
         font-size: 15px;
+    }
+
+    html {
+        background-color: #346e36;
     }
 
 }
@@ -255,3 +260,4 @@ body {
         font-size: 0.8em;
     }
 }
+
