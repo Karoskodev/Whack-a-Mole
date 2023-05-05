@@ -83,8 +83,37 @@ an alert pops up with the rules of the game, providing users with a quick and ea
  - GitHub as cloud repository
  - Midjurney for generating all images 
 
- ## Testing
-Extensive testing was conducted to confirm that everytjing were functioning correctly.
+## Testing
+Extensive testing was conducted to confirm that everything were functioning correctly.
 To identify any potential issues, the site and documentation were reviewed by friends and family members.
 Furthermore, the W3C Markup Validator, W3C CSS Validator and JShint Services were employed to scrutinize for any errors.
- Also Lighthouse testing to evaluate performance for both the desktop and mobile versions.
+Also Lighthouse testing to evaluate performance for both the desktop and mobile versions.
+ 
+### Google Lighthouse Testing
+desktop:
+<br>
+![desktop](assets/images/readme/pc.png)
+<br>
+mobile:
+<br>
+![mobile](assets/images/readme/mobile.png)
+
+### HTML Validation
+![html](assets/images/readme/t1.png)
+
+### CSS Validation
+![CSS](assets/images/readme/t2.png)
+
+### JShint 
+![html](assets/images/readme/js.png)
+
+## Deployment
+
+  To deploy the project, I followed these steps, beginning from the main project repository [here](https://github.com/Karoskodev/Whack-a-Mole)
+
+1. Navigated to the Settings option in the repository's navigation menu.
+2. Selected the Pages option on the sidebar.
+3. In the first dropdown menu labeled Source, I chose the main branch from the available options.
+4. Left the next dropdown labeled /root as the default option.
+5. Selected the Save button.
+6. Received a notification from GitHub indicating that the project was being deployed.
